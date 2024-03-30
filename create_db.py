@@ -26,13 +26,13 @@ def get_files(dir_path):
 # 加载文件函数
 def get_text():
     docs = []
-    loader = JSONLoader(file_path="/root/data/LAW-GPT/data/test.json",jq_schema='.[]',text_content=False)
+    loader = JSONLoader(file_path="/home/xlab-app-center/test.json",jq_schema='.[]',text_content=False)
     docs.extend(loader.load())
     return docs
 
 # 目标文件夹
 tar_dir = [
-    "/root/data/LAW-GPT"
+    "/home/xlab-app-center/test.json"
 ]
 
 # 加载目标文件
